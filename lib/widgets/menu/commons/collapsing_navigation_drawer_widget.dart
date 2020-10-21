@@ -1,6 +1,8 @@
 import '../custom_navigation_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:app_smart_home/colors.dart';
+import 'package:app_smart_home/widgets/pageTransition.dart';
+import '../../../scenes/aboutUs.dart';
 
 class CollapsingNavigationDrawer extends StatefulWidget {
   @override
@@ -56,6 +58,7 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>
               animationController: _animationController,
               onTap: () {
                 Navigator.pushNamed(context, '/aboutUs');
+                Navigator.push(context, SlideRightRoute(page: AboutUs()));
                 var i = 0;
                 for (; i < navigationItems.length; i++) {
                   navigationItems[i].currentSelected = false;
