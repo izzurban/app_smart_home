@@ -11,7 +11,6 @@ class _WelcomeState extends State<Welcome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //drawer: CollapsingNavigationDrawer(),
       body: Stack(
         children: <Widget>[
           Container(
@@ -22,7 +21,6 @@ class _WelcomeState extends State<Welcome> {
                 Container(
                     width: MediaQuery.of(context).size.width, // - 70,
                     height: MediaQuery.of(context).size.height,
-                    //margin: EdgeInsets.only(left: 70),
                     padding: EdgeInsets.only(top: 30, left: 50, right: 30),
                     child: Column(
                       children: [

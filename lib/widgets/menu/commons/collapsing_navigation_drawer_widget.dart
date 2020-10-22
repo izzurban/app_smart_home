@@ -57,8 +57,7 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>
               icon: Icons.person,
               animationController: _animationController,
               onTap: () {
-                Navigator.pushNamed(context, '/aboutUs');
-                Navigator.push(context, SlideRightRoute(page: AboutUs()));
+                Navigator.push(context, FadeRoute(page: AboutUs()));
                 var i = 0;
                 for (; i < navigationItems.length; i++) {
                   navigationItems[i].currentSelected = false;

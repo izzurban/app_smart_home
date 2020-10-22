@@ -7,6 +7,7 @@ import 'scenes/routines.dart';
 import 'scenes/groups.dart';
 import 'scenes/add.dart';
 import 'scenes/settings.dart';
+import 'widgets/pageTransition.dart';
 
 class Routes {
   var routes = <String, WidgetBuilder>{

@@ -4,8 +4,6 @@ import 'package:flutter/services.dart';
 import '../colors.dart';
 import 'dart:ui';
 import 'welcome.dart';
-import '../routes.dart';
-import '../main.dart';
 
 class TryLogin {
   final String user;
@@ -13,11 +11,6 @@ class TryLogin {
 
   TryLogin(this.user, this.password);
 }
-//
-//
-// **LOGIN PAGE**
-//
-//
 
 class LoginPage extends StatefulWidget {
   @override
@@ -175,8 +168,10 @@ class _LoginPageState extends State<LoginPage> {
                             style: TextStyle(color: Colors.grey),
                           ),
                           onTap: () {
-                            caixaDialogo('Em breve!',
-                                'Para teste use:\nUsuário: admim\nSenha: 123');
+                            caixaDialogo(
+                                'Em breve!',
+                                'Para teste use:\nUsuário: admim\nSenha: 123',
+                                'ok');
                           },
                         ),
                       ),
@@ -189,7 +184,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           onTap: () {
                             caixaDialogo('Em breve!',
-                                'Para testes use:\nUsuário: admim\nSenha: 123');
+                                'Use:\nUsuário: admim\nSenha: 123', 'Entendi!');
                           },
                         ),
                       ),
@@ -205,13 +200,14 @@ class _LoginPageState extends State<LoginPage> {
                             style:
                                 ElevatedButton.styleFrom(primary: Cor.azulCeu),
                             onPressed: () {
-                              if (tryUser == 'admin' && tryPassword == '123') {
-                                // Navigator.pushNamed(context, '/welcome');
-                                Navigator.push(
-                                    context, SlideRightRoute(page: Welcome()));
-                              } else {
-                                caixaDialogo('', 'Usuário ou senha incorreta!');
-                              }
+                              // if (tryUser == 'admin' && tryPassword == '123') {
+                              //   // Navigator.pushNamed(context, '/welcome');
+                              Navigator.push(
+                                  context, FadeRoute(page: Welcome()));
+                              // } else {
+                              //   caixaDialogo(
+                              //       '', 'Usuário ou senha incorreta!', 'OK');
+                              // }
                             },
                             child: Center(
                               child: Text(
@@ -232,7 +228,7 @@ class _LoginPageState extends State<LoginPage> {
             ])));
   }
 
-  caixaDialogo(title, msg) {
+  caixaDialogo(title, msg, textButton) {
     return showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -244,7 +240,7 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text('fechar'))
+                  child: Text(textButton))
             ],
           );
         });

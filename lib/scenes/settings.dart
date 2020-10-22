@@ -11,7 +11,6 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //drawer: CollapsingNavigationDrawer(),
       body: Stack(
         children: <Widget>[
           Container(
