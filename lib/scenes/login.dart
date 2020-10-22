@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                     Spacer(),
                     Stack(children: [
                       Image(
-                        image: AssetImage('images/smartHomeLogoBr.png'),
+                        image: AssetImage(foto),
                         alignment: Alignment.center,
                         width: 180,
                       ),
@@ -62,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                               alignment: Alignment.center,
                               width: 180,
                               height: 180,
-                              child: Image.asset('images/smartHomeLogoBr.png')),
+                              child: Image.asset(foto)),
                         ),
                       )
                     ]),
