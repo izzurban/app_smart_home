@@ -1,3 +1,4 @@
+import 'package:app_smart_home/scenes/aboutUs_fonts.dart';
 import 'package:flutter/material.dart';
 import 'scenes/login.dart';
 import 'scenes/aboutUs.dart';
@@ -7,12 +8,12 @@ import 'scenes/routines.dart';
 import 'scenes/groups.dart';
 import 'scenes/add.dart';
 import 'scenes/settings.dart';
-import 'widgets/pageTransition.dart';
 
 class Routes {
   var routes = <String, WidgetBuilder>{
     '/login': (context) => LoginPage(),
     '/aboutUs': (context) => AboutUs(),
+    '/aboutUsFonts': (context) => AboutUsFonts(),
     '/welcome': (context) => Welcome(),
     '/devices': (context) => Devices(),
     '/routines': (context) => Routines(),
