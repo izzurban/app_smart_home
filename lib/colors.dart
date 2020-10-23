@@ -18,3 +18,17 @@ class Cor {
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter);
 }
+
+//
+//Menu
+//
+TextStyle listTitleDefaultTextStyle =
+    TextStyle(color: Colors.white, fontSize: 20.0, fontWeight: FontWeight.w600);
+TextStyle listTitleSelectedTextStyle =
+    TextStyle(color: Cor.bgEsc1, fontSize: 20.0, fontWeight: FontWeight.w600);
+
+Color selectedColor = Cor.azulTurqueza; //icones
+Color notSelectedColor = Cor.bgEsc1; //icones
+
+Color selectedBg = Colors.white;
+Color notSelectedBg = Colors.white.withOpacity(0);

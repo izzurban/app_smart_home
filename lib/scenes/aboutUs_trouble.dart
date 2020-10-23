@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../routes.dart';
 
 class AboutUsTrouble extends StatelessWidget {
@@ -89,21 +90,48 @@ class AboutUsTrouble extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                  primary: Cor.azulTurqueza),
-                              onPressed: () {
-                                Navigator.push(
-                                    context, FadeRoute(page: AboutUsFonts()));
-                              },
-                              child: Center(
-                                child: Text(
-                                  'Fontes . Links'.toUpperCase(),
-                                  style: TextStyle(
-                                    color: Cor.fonteEscura,
-                                    fontWeight: FontWeight.bold,
+                            Container(
+                              margin: EdgeInsets.only(left: 25, right: 30),
+                              child: Column(
+                                children: [
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                        primary: Cor.azulTurqueza),
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                      Navigator.push(context,
+                                          FadeRoute(page: AboutUsFonts()));
+                                    },
+                                    child: Center(
+                                      child: Text(
+                                        'Fontes . Links'.toUpperCase(),
+                                        style: TextStyle(
+                                          color: Cor.fonteEscura,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
                                   ),
-                                ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20),
+                                    child: ElevatedButton(
+                                      style: ElevatedButton.styleFrom(
+                                          primary: Cor.azulTurqueza),
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Center(
+                                        child: Text(
+                                          'Sobre'.toUpperCase(),
+                                          style: TextStyle(
+                                            color: Cor.fonteEscura,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],

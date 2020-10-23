@@ -12,8 +12,10 @@ import 'scenes/settings.dart';
 
 export 'package:app_smart_home/scenes/aboutUs_trouble.dart';
 export 'package:app_smart_home/scenes/aboutUs_fonts.dart';
+export 'package:app_smart_home/scenes/aboutUs_trouble.dart';
 export 'package:app_smart_home/widgets/pageTransition.dart';
 export 'package:app_smart_home/widgets/menu/custom_navigation_drawer.dart';
+export 'colors.dart';
 
 class Routes {
   var routes = <String, WidgetBuilder>{

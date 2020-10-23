@@ -1,6 +1,6 @@
-import '../colors.dart';
 import 'package:flutter/material.dart';
-import 'package:app_smart_home/widgets/menu/custom_navigation_drawer.dart';
+
+import '../routes.dart';
 
 class Welcome extends StatefulWidget {
   @override

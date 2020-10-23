@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:app_smart_home/widgets/pageTransition.dart';
 import 'package:flutter/services.dart';
-import '../colors.dart';
 import 'dart:ui';
 import 'welcome.dart';
+
+import '../routes.dart';
 
 class TryLogin {
   final String user;
