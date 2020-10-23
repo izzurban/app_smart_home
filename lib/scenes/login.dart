@@ -200,14 +200,13 @@ class _LoginPageState extends State<LoginPage> {
                             style:
                                 ElevatedButton.styleFrom(primary: Cor.azulCeu),
                             onPressed: () {
-                              // if (tryUser == 'admin' && tryPassword == '123') {
-                              //   // Navigator.pushNamed(context, '/welcome');
-                              Navigator.push(
-                                  context, FadeRoute(page: Welcome()));
-                              // } else {
-                              //   caixaDialogo(
-                              //       '', 'Usuário ou senha incorreta!', 'OK');
-                              // }
+                              if (tryUser == 'admin' && tryPassword == '123') {
+                                Navigator.push(
+                                    context, FadeRoute(page: Welcome()));
+                              } else {
+                                caixaDialogo(
+                                    '', 'Usuário ou senha incorreta!', 'OK');
+                              }
                             },
                             child: Center(
                               child: Text(

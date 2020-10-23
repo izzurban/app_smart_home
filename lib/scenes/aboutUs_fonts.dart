@@ -253,55 +253,6 @@ class FontList extends StatelessWidget {
   }
 }
 
-// replace this function with the code in the examples
-
-Widget _myListView2(BuildContext context) {
-  return ListView(
-    scrollDirection: Axis.vertical,
-    children: <Widget>[
-      ListTile(
-        leading: Icon(
-          Icons.wb_sunny,
-          color: Cor.azulTurqueza,
-        ),
-        title: Text('Sun'),
-        tileColor: Colors.white,
-        trailing: Icon(
-          Icons.keyboard_arrow_right,
-          color: Cor.azulTurqueza,
-        ),
-      ),
-      ListTile(
-        leading: Icon(
-          Icons.brightness_3,
-          color: Cor.azulTurqueza,
-        ),
-        title: Text('Moon'),
-        tileColor: Colors.white,
-        trailing: Icon(
-          Icons.keyboard_arrow_right,
-          color: Cor.azulTurqueza,
-        ),
-      ),
-      ListTile(
-        leading: Icon(
-          Icons.star,
-          color: Cor.azulTurqueza,
-        ),
-        title: Text(
-          'Star',
-          style: TextStyle(color: Colors.white, fontSize: 15),
-        ),
-        tileColor: Colors.white,
-        trailing: Icon(
-          Icons.keyboard_arrow_right,
-          color: Cor.azulTurqueza,
-        ),
-      ),
-    ],
-  );
-}
-
 Widget _myListView(BuildContext context) {
   var flutterIcon = '../../assets/images/flutter.png';
   var stackIcon = '../../assets/images/stackoverflow.png';
