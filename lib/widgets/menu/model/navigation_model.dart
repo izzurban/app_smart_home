@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../presentation/my_icons_icons.dart';
 
 class NavigationModel {
   String title;
@@ -32,7 +33,7 @@ List<NavigationModel> navigationItems = [
       currentSelected: false),
   NavigationModel(
       title: "Grupos",
-      icon: Icons.group_work_outlined,
+      icon: Icons.filter_3,
       navigation: '/groups',
       currentSelected: false),
   NavigationModel(
