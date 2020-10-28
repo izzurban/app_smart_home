@@ -78,7 +78,7 @@ class AboutUsTrouble extends StatelessWidget {
                                         color: Colors.white, fontSize: 16),
                                   ),
                                   Text(
-                                    '\nO menu lateral foi o que mais me tomou tempo, além da aparência mudei o comportamento, e adicionei a navegação, por ser ciado dinâmicamente a complexidade fica bem maior.',
+                                    '\nO menu lateral foi o que mais me tomou tempo, além da aparência mudei o comportamento, e adicionei a navegação, por ser criado dinâmicamente a complexidade fica bem maior.',
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 16),
                                   ),

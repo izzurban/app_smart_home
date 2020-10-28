@@ -78,7 +78,7 @@ Widget _roomListView(BuildContext context) {
     'Cozinha',
     'Quarto 1',
     'Quarto 2',
-    'Quarto 3',
+    'Quarto Casal',
   ];
 
   final icons = [

@@ -37,7 +37,7 @@ class Routes {
       title: 'My Smart Home',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: LoginPage(),
-      initialRoute: '/welcome',
+      initialRoute: '/login',
       routes: routes,
     ));
   }
